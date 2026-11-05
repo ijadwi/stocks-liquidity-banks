@@ -1,5 +1,365 @@
 [
  {
+  "name": "AMD",
+  "ticker": "AMD",
+  "bank": "JPMorgan",
+  "rec": "Neutral",
+  "prev": "$550",
+  "new": "$575",
+  "date": "2026-11-04",
+  "source": "Yahoo Finance"
+ },
+ {
+  "name": "AMD",
+  "ticker": "AMD",
+  "bank": "Morgan Stanley",
+  "rec": "Neutral",
+  "prev": "$510",
+  "new": "$550",
+  "date": "2026-11-04",
+  "source": "Yahoo Finance"
+ },
+ {
+  "name": "AMD",
+  "ticker": "AMD",
+  "bank": "Wells Fargo",
+  "rec": "Overweight",
+  "prev": "$700",
+  "new": "$650",
+  "date": "2026-11-04",
+  "source": "Yahoo Finance"
+ },
+ {
+  "name": "كورويف",
+  "ticker": "CRWV",
+  "bank": "Citigroup",
+  "rec": "Buy",
+  "prev": "$159",
+  "new": "$128",
+  "date": "2026-11-04",
+  "source": "Yahoo Finance"
+ },
+ {
+  "name": "AAPL",
+  "ticker": "AAPL",
+  "bank": "JPMorgan",
+  "rec": "Overweight",
+  "prev": "$360",
+  "new": "$355",
+  "date": "2026-11-03",
+  "source": "Yahoo Finance"
+ },
+ {
+  "name": "AAPL",
+  "ticker": "AAPL",
+  "bank": "Morgan Stanley",
+  "rec": "Overweight",
+  "prev": "$355",
+  "new": "$350",
+  "date": "2026-11-03",
+  "source": "Yahoo Finance"
+ },
+ {
+  "name": "PLTR",
+  "ticker": "PLTR",
+  "bank": "Citigroup",
+  "rec": "Buy",
+  "prev": "$250",
+  "new": "$265",
+  "date": "2026-11-03",
+  "source": "Yahoo Finance"
+ },
+ {
+  "name": "PLTR",
+  "ticker": "PLTR",
+  "bank": "Morgan Stanley",
+  "rec": "Neutral",
+  "prev": "$205",
+  "new": "$233",
+  "date": "2026-11-03",
+  "source": "Yahoo Finance"
+ },
+ {
+  "name": "AMD",
+  "ticker": "AMD",
+  "bank": "Morgan Stanley",
+  "rec": "Neutral",
+  "prev": "$465",
+  "new": "$510",
+  "date": "2026-11-02",
+  "source": "Yahoo Finance"
+ },
+ {
+  "name": "GOOGL",
+  "ticker": "GOOGL",
+  "bank": "Wells Fargo",
+  "rec": "Overweight",
+  "prev": "$371",
+  "new": "$365",
+  "date": "2026-11-02",
+  "source": "Yahoo Finance"
+ },
+ {
+  "name": "آمازون",
+  "ticker": "AMZN",
+  "bank": "Wells Fargo",
+  "rec": "Overweight",
+  "prev": "$329",
+  "new": "$326",
+  "date": "2026-10-30",
+  "source": "Yahoo Finance"
+ },
+ {
+  "name": "آمازون",
+  "ticker": "AMZN",
+  "bank": "Morgan Stanley",
+  "rec": "Overweight",
+  "prev": "$350",
+  "new": "$335",
+  "date": "2026-10-30",
+  "source": "Yahoo Finance"
+ },
+ {
+  "name": "GOOGL",
+  "ticker": "GOOGL",
+  "bank": "Citigroup",
+  "rec": "Buy",
+  "prev": "$447",
+  "new": "$375",
+  "date": "2026-10-30",
+  "source": "Yahoo Finance"
+ },
+ {
+  "name": "GOOGL",
+  "ticker": "GOOGL",
+  "bank": "Wells Fargo",
+  "rec": "Overweight",
+  "prev": "$417",
+  "new": "$371",
+  "date": "2026-10-30",
+  "source": "Yahoo Finance"
+ },
+ {
+  "name": "INTC",
+  "ticker": "INTC",
+  "bank": "JPMorgan",
+  "rec": "Neutral",
+  "prev": "$85",
+  "new": "$80",
+  "date": "2026-10-30",
+  "source": "Yahoo Finance"
+ },
+ {
+  "name": "INTC",
+  "ticker": "INTC",
+  "bank": "Citigroup",
+  "rec": "Buy",
+  "prev": "$130",
+  "new": "$100",
+  "date": "2026-10-30",
+  "source": "Yahoo Finance"
+ },
+ {
+  "name": "INTC",
+  "ticker": "INTC",
+  "bank": "Wells Fargo",
+  "rec": "Neutral",
+  "prev": "$120",
+  "new": "$80",
+  "date": "2026-10-30",
+  "source": "Yahoo Finance"
+ },
+ {
+  "name": "إيلي ليلي",
+  "ticker": "LLY",
+  "bank": "JPMorgan",
+  "rec": "Overweight",
+  "prev": "$1,500",
+  "new": "$1,650",
+  "date": "2026-10-30",
+  "source": "Yahoo Finance"
+ },
+ {
+  "name": "إيلي ليلي",
+  "ticker": "LLY",
+  "bank": "Citigroup",
+  "rec": "Buy",
+  "prev": "$1,600",
+  "new": "$1,650",
+  "date": "2026-10-30",
+  "source": "Yahoo Finance"
+ },
+ {
+  "name": "إيلي ليلي",
+  "ticker": "LLY",
+  "bank": "Morgan Stanley",
+  "rec": "Overweight",
+  "prev": "$1,430",
+  "new": "$1,596",
+  "date": "2026-10-30",
+  "source": "Yahoo Finance"
+ },
+ {
+  "name": "إيلي ليلي",
+  "ticker": "LLY",
+  "bank": "Wells Fargo",
+  "rec": "Overweight",
+  "prev": "$1,330",
+  "new": "$1,500",
+  "date": "2026-10-30",
+  "source": "Yahoo Finance"
+ },
+ {
+  "name": "تريد ويب",
+  "ticker": "TW",
+  "bank": "JPMorgan",
+  "rec": "Overweight",
+  "prev": "$136",
+  "new": "$137",
+  "date": "2026-10-30",
+  "source": "Yahoo Finance"
+ },
+ {
+  "name": "تريد ويب",
+  "ticker": "TW",
+  "bank": "Wells Fargo",
+  "rec": "Overweight",
+  "prev": "$125",
+  "new": "$133",
+  "date": "2026-10-30",
+  "source": "Yahoo Finance"
+ },
+ {
+  "name": "GOOGL",
+  "ticker": "GOOGL",
+  "bank": "Morgan Stanley",
+  "rec": "Overweight",
+  "prev": "$400",
+  "new": "$375",
+  "date": "2026-10-29",
+  "source": "Yahoo Finance"
+ },
+ {
+  "name": "GOOGL",
+  "ticker": "GOOGL",
+  "bank": "Citigroup",
+  "rec": "Neutral",
+  "prev": "-",
+  "new": "-",
+  "date": "2026-10-29",
+  "source": "Yahoo Finance"
+ },
+ {
+  "name": "MSFT",
+  "ticker": "MSFT",
+  "bank": "Citigroup",
+  "rec": "Buy",
+  "prev": "$636",
+  "new": "$680",
+  "date": "2026-10-29",
+  "source": "Yahoo Finance"
+ },
+ {
+  "name": "MSFT",
+  "ticker": "MSFT",
+  "bank": "Wells Fargo",
+  "rec": "Overweight",
+  "prev": "$725",
+  "new": "$750",
+  "date": "2026-10-29",
+  "source": "Yahoo Finance"
+ },
+ {
+  "name": "سيرفس ناو",
+  "ticker": "NOW",
+  "bank": "JPMorgan",
+  "rec": "Overweight",
+  "prev": "$150",
+  "new": "$160",
+  "date": "2026-10-29",
+  "source": "Yahoo Finance"
+ },
+ {
+  "name": "سيرفس ناو",
+  "ticker": "NOW",
+  "bank": "Citigroup",
+  "rec": "Buy",
+  "prev": "$170",
+  "new": "$157",
+  "date": "2026-10-29",
+  "source": "Yahoo Finance"
+ },
+ {
+  "name": "سيرفس ناو",
+  "ticker": "NOW",
+  "bank": "Wells Fargo",
+  "rec": "Overweight",
+  "prev": "$190",
+  "new": "$175",
+  "date": "2026-10-29",
+  "source": "Yahoo Finance"
+ },
+ {
+  "name": "PLTR",
+  "ticker": "PLTR",
+  "bank": "JPMorgan",
+  "rec": "Overweight",
+  "prev": "-",
+  "new": "$262",
+  "date": "2026-10-29",
+  "source": "Yahoo Finance"
+ },
+ {
+  "name": "كورنينغ",
+  "ticker": "GLW",
+  "bank": "Morgan Stanley",
+  "rec": "Neutral",
+  "prev": "$165",
+  "new": "$155",
+  "date": "2026-10-28",
+  "source": "Yahoo Finance"
+ },
+ {
+  "name": "كورويف",
+  "ticker": "CRWV",
+  "bank": "Morgan Stanley",
+  "rec": "Neutral",
+  "prev": "$99",
+  "new": "$70",
+  "date": "2026-10-23",
+  "source": "Yahoo Finance"
+ },
+ {
+  "name": "ويسترن ديجيتال",
+  "ticker": "WDC",
+  "bank": "Citigroup",
+  "rec": "Buy",
+  "prev": "$740",
+  "new": "$660",
+  "date": "2026-10-23",
+  "source": "Yahoo Finance"
+ },
+ {
+  "name": "ويسترن ديجيتال",
+  "ticker": "WDC",
+  "bank": "JPMorgan",
+  "rec": "Overweight",
+  "prev": "$600",
+  "new": "$650",
+  "date": "2026-10-23",
+  "source": "Yahoo Finance"
+ },
+ {
+  "name": "ويسترن ديجيتال",
+  "ticker": "WDC",
+  "bank": "Morgan Stanley",
+  "rec": "Overweight",
+  "prev": "$643",
+  "new": "$668",
+  "date": "2026-10-23",
+  "source": "Yahoo Finance"
+ },
+ {
   "name": "ميتا بلاتفورمز",
   "ticker": "META",
   "bank": "Goldman Sachs",
@@ -18,6 +378,66 @@
   "new": "$671",
   "date": "2026-10-22",
   "source": "Investing.com"
+ },
+ {
+  "name": "ميتا بلاتفورمز",
+  "ticker": "META",
+  "bank": "Citigroup",
+  "rec": "Buy",
+  "prev": "$895",
+  "new": "$905",
+  "date": "2026-10-22",
+  "source": "Yahoo Finance"
+ },
+ {
+  "name": "ميتا بلاتفورمز",
+  "ticker": "META",
+  "bank": "Wells Fargo",
+  "rec": "Overweight",
+  "prev": "$1,000",
+  "new": "$995",
+  "date": "2026-10-22",
+  "source": "Yahoo Finance"
+ },
+ {
+  "name": "ميتا بلاتفورمز",
+  "ticker": "META",
+  "bank": "JPMorgan",
+  "rec": "Overweight",
+  "prev": "$920",
+  "new": "$940",
+  "date": "2026-10-22",
+  "source": "Yahoo Finance"
+ },
+ {
+  "name": "PLTR",
+  "ticker": "PLTR",
+  "bank": "Citigroup",
+  "rec": "Buy",
+  "prev": "$245",
+  "new": "$250",
+  "date": "2026-10-22",
+  "source": "Yahoo Finance"
+ },
+ {
+  "name": "TSLA",
+  "ticker": "TSLA",
+  "bank": "Morgan Stanley",
+  "rec": "Neutral",
+  "prev": "$400",
+  "new": "$410",
+  "date": "2026-10-22",
+  "source": "Yahoo Finance"
+ },
+ {
+  "name": "TSLA",
+  "ticker": "TSLA",
+  "bank": "JPMorgan",
+  "rec": "Neutral",
+  "prev": "$415",
+  "new": "$430",
+  "date": "2026-10-22",
+  "source": "Yahoo Finance"
  },
  {
   "name": "إم إس سي آي",
@@ -90,6 +510,56 @@
   "source": "TokenPost"
  },
  {
+  "name": "إم إس سي آي",
+  "ticker": "MSCI",
+  "bank": "Wells Fargo",
+  "rec": "Overweight",
+  "prev": "$685",
+  "new": "$720",
+  "date": "2026-10-21",
+  "source": "Yahoo Finance"
+ },
+ {
+  "name": "إم إس سي آي",
+  "ticker": "MSCI",
+  "bank": "Morgan Stanley",
+  "rec": "Overweight",
+  "prev": "$662",
+  "new": "$671",
+  "date": "2026-10-21",
+  "source": "Yahoo Finance"
+ },
+ {
+  "name": "NFLX",
+  "ticker": "NFLX",
+  "bank": "Citigroup",
+  "rec": "Buy",
+  "prev": "$100",
+  "new": "$85",
+  "date": "2026-10-21",
+  "source": "Yahoo Finance"
+ },
+ {
+  "name": "NFLX",
+  "ticker": "NFLX",
+  "bank": "Morgan Stanley",
+  "rec": "Overweight",
+  "prev": "$80",
+  "new": "$77",
+  "date": "2026-10-21",
+  "source": "Yahoo Finance"
+ },
+ {
+  "name": "NFLX",
+  "ticker": "NFLX",
+  "bank": "JPMorgan",
+  "rec": "Overweight",
+  "prev": "$85",
+  "new": "$81",
+  "date": "2026-10-21",
+  "source": "Yahoo Finance"
+ },
+ {
   "name": "إيلي ليلي",
   "ticker": "LLY",
   "bank": "Goldman Sachs",
@@ -98,6 +568,16 @@
   "new": "$1,413",
   "date": "2026-10-20",
   "source": "TIKR/Yahoo"
+ },
+ {
+  "name": "ويسترن ديجيتال",
+  "ticker": "WDC",
+  "bank": "Morgan Stanley",
+  "rec": "Overweight",
+  "prev": "$676",
+  "new": "$643",
+  "date": "2026-10-20",
+  "source": "Yahoo Finance"
  },
  {
   "name": "آمازون",
@@ -130,6 +610,36 @@
   "source": "TipRanks"
  },
  {
+  "name": "INTC",
+  "ticker": "INTC",
+  "bank": "JPMorgan",
+  "rec": "Neutral",
+  "prev": "$85",
+  "new": "$85",
+  "date": "2026-10-19",
+  "source": "Yahoo Finance"
+ },
+ {
+  "name": "ميتا بلاتفورمز",
+  "ticker": "META",
+  "bank": "Morgan Stanley",
+  "rec": "Overweight",
+  "prev": "$775",
+  "new": "$820",
+  "date": "2026-10-19",
+  "source": "Yahoo Finance"
+ },
+ {
+  "name": "ويسترن ديجيتال",
+  "ticker": "WDC",
+  "bank": "Wells Fargo",
+  "rec": "Overweight",
+  "prev": "$730",
+  "new": "$450",
+  "date": "2026-10-16",
+  "source": "Yahoo Finance"
+ },
+ {
   "name": "ميتا بلاتفورمز",
   "ticker": "META",
   "bank": "Citigroup",
@@ -140,6 +650,36 @@
   "source": "Yahoo/GuruFocus"
  },
  {
+  "name": "GOOGL",
+  "ticker": "GOOGL",
+  "bank": "JPMorgan",
+  "rec": "Overweight",
+  "prev": "$420",
+  "new": "$425",
+  "date": "2026-10-15",
+  "source": "Yahoo Finance"
+ },
+ {
+  "name": "ميتا بلاتفورمز",
+  "ticker": "META",
+  "bank": "JPMorgan",
+  "rec": "Overweight",
+  "prev": "$920",
+  "new": "$920",
+  "date": "2026-10-15",
+  "source": "Yahoo Finance"
+ },
+ {
+  "name": "MSFT",
+  "ticker": "MSFT",
+  "bank": "Citigroup",
+  "rec": "Buy",
+  "prev": "$600",
+  "new": "$636",
+  "date": "2026-10-15",
+  "source": "Yahoo Finance"
+ },
+ {
   "name": "سيرفس ناو",
   "ticker": "NOW",
   "bank": "Citigroup",
@@ -148,6 +688,166 @@
   "new": "$170",
   "date": "2026-10-14",
   "source": "Investing.com"
+ },
+ {
+  "name": "ميتا بلاتفورمز",
+  "ticker": "META",
+  "bank": "Goldman Sachs",
+  "rec": "Buy",
+  "prev": "$860",
+  "new": "$860",
+  "date": "2026-10-14",
+  "source": "Yahoo Finance"
+ },
+ {
+  "name": "إم إس سي آي",
+  "ticker": "MSCI",
+  "bank": "JPMorgan",
+  "rec": "Overweight",
+  "prev": "$700",
+  "new": "$685",
+  "date": "2026-10-14",
+  "source": "Yahoo Finance"
+ },
+ {
+  "name": "تريد ويب",
+  "ticker": "TW",
+  "bank": "Wells Fargo",
+  "rec": "Overweight",
+  "prev": "$118",
+  "new": "$125",
+  "date": "2026-10-14",
+  "source": "Yahoo Finance"
+ },
+ {
+  "name": "إم إس سي آي",
+  "ticker": "MSCI",
+  "bank": "Morgan Stanley",
+  "rec": "Overweight",
+  "prev": "$700",
+  "new": "$662",
+  "date": "2026-10-13",
+  "source": "Yahoo Finance"
+ },
+ {
+  "name": "سيرفس ناو",
+  "ticker": "NOW",
+  "bank": "Wells Fargo",
+  "rec": "Overweight",
+  "prev": "$175",
+  "new": "$190",
+  "date": "2026-10-13",
+  "source": "Yahoo Finance"
+ },
+ {
+  "name": "AAPL",
+  "ticker": "AAPL",
+  "bank": "JPMorgan",
+  "rec": "Overweight",
+  "prev": "$340",
+  "new": "$360",
+  "date": "2026-10-12",
+  "source": "Yahoo Finance"
+ },
+ {
+  "name": "آمازون",
+  "ticker": "AMZN",
+  "bank": "Wells Fargo",
+  "rec": "Overweight",
+  "prev": "$338",
+  "new": "$329",
+  "date": "2026-10-12",
+  "source": "Yahoo Finance"
+ },
+ {
+  "name": "تريد ويب",
+  "ticker": "TW",
+  "bank": "Morgan Stanley",
+  "rec": "Neutral",
+  "prev": "$123",
+  "new": "$125",
+  "date": "2026-10-09",
+  "source": "Yahoo Finance"
+ },
+ {
+  "name": "NFLX",
+  "ticker": "NFLX",
+  "bank": "Morgan Stanley",
+  "rec": "Overweight",
+  "prev": "$83",
+  "new": "$80",
+  "date": "2026-10-08",
+  "source": "Yahoo Finance"
+ },
+ {
+  "name": "PLTR",
+  "ticker": "PLTR",
+  "bank": "Goldman Sachs",
+  "rec": "Buy",
+  "prev": "-",
+  "new": "$230",
+  "date": "2026-10-08",
+  "source": "Yahoo Finance"
+ },
+ {
+  "name": "إيلي ليلي",
+  "ticker": "LLY",
+  "bank": "Morgan Stanley",
+  "rec": "Overweight",
+  "prev": "$1,419",
+  "new": "$1,430",
+  "date": "2026-10-07",
+  "source": "Yahoo Finance"
+ },
+ {
+  "name": "AMD",
+  "ticker": "AMD",
+  "bank": "Citigroup",
+  "rec": "Buy",
+  "prev": "$575",
+  "new": "$800",
+  "date": "2026-10-06",
+  "source": "Yahoo Finance"
+ },
+ {
+  "name": "GOOGL",
+  "ticker": "GOOGL",
+  "bank": "Wells Fargo",
+  "rec": "Overweight",
+  "prev": "$411",
+  "new": "$417",
+  "date": "2026-10-06",
+  "source": "Yahoo Finance"
+ },
+ {
+  "name": "ميتا بلاتفورمز",
+  "ticker": "META",
+  "bank": "Wells Fargo",
+  "rec": "Overweight",
+  "prev": "$796",
+  "new": "$1,000",
+  "date": "2026-10-06",
+  "source": "Yahoo Finance"
+ },
+ {
+  "name": "UBER",
+  "ticker": "UBER",
+  "bank": "Wells Fargo",
+  "rec": "Overweight",
+  "prev": "$89",
+  "new": "$92",
+  "date": "2026-10-05",
+  "source": "Yahoo Finance"
+ },
+ {
+  "name": "تريد ويب",
+  "ticker": "TW",
+  "bank": "Wells Fargo",
+  "rec": "Overweight",
+  "prev": "-",
+  "new": "$118",
+  "date": "2026-10-02",
+  "source": "Yahoo Finance"
  },
  {
   "name": "مايكرون",
@@ -168,5 +868,335 @@
   "new": "$1,550",
   "date": "2026-10-01",
   "source": "BofA Research"
+ },
+ {
+  "name": "AAPL",
+  "ticker": "AAPL",
+  "bank": "Morgan Stanley",
+  "rec": "Overweight",
+  "prev": "$360",
+  "new": "$355",
+  "date": "2026-10-01",
+  "source": "Yahoo Finance"
+ },
+ {
+  "name": "MSFT",
+  "ticker": "MSFT",
+  "bank": "Wells Fargo",
+  "rec": "Overweight",
+  "prev": "$700",
+  "new": "$725",
+  "date": "2026-10-01",
+  "source": "Yahoo Finance"
+ },
+ {
+  "name": "مايكرون",
+  "ticker": "MU",
+  "bank": "Morgan Stanley",
+  "rec": "Overweight",
+  "prev": "$1,200",
+  "new": "$1,200",
+  "date": "2026-10-01",
+  "source": "Yahoo Finance"
+ },
+ {
+  "name": "AAPL",
+  "ticker": "AAPL",
+  "bank": "Morgan Stanley",
+  "rec": "Overweight",
+  "prev": "$360",
+  "new": "$360",
+  "date": "2026-09-29",
+  "source": "Yahoo Finance"
+ },
+ {
+  "name": "إم إس سي آي",
+  "ticker": "MSCI",
+  "bank": "Wells Fargo",
+  "rec": "Overweight",
+  "prev": "$690",
+  "new": "$685",
+  "date": "2026-09-29",
+  "source": "Yahoo Finance"
+ },
+ {
+  "name": "إيلي ليلي",
+  "ticker": "LLY",
+  "bank": "JPMorgan",
+  "rec": "Overweight",
+  "prev": "$1,400",
+  "new": "$1,500",
+  "date": "2026-09-28",
+  "source": "Yahoo Finance"
+ },
+ {
+  "name": "TSLA",
+  "ticker": "TSLA",
+  "bank": "JPMorgan",
+  "rec": "Neutral",
+  "prev": "$445",
+  "new": "$415",
+  "date": "2026-09-28",
+  "source": "Yahoo Finance"
+ },
+ {
+  "name": "كورويف",
+  "ticker": "CRWV",
+  "bank": "JPMorgan",
+  "rec": "Overweight",
+  "prev": "$120",
+  "new": "$125",
+  "date": "2026-09-24",
+  "source": "Yahoo Finance"
+ },
+ {
+  "name": "ميتا بلاتفورمز",
+  "ticker": "META",
+  "bank": "JPMorgan",
+  "rec": "Overweight",
+  "prev": "$820",
+  "new": "$920",
+  "date": "2026-09-24",
+  "source": "Yahoo Finance"
+ },
+ {
+  "name": "مايكرون",
+  "ticker": "MU",
+  "bank": "Wells Fargo",
+  "rec": "Overweight",
+  "prev": "$1,525",
+  "new": "$1,400",
+  "date": "2026-09-23",
+  "source": "Yahoo Finance"
+ },
+ {
+  "name": "مايكرون",
+  "ticker": "MU",
+  "bank": "Citigroup",
+  "rec": "Buy",
+  "prev": "$1,150",
+  "new": "$1,300",
+  "date": "2026-09-23",
+  "source": "Yahoo Finance"
+ },
+ {
+  "name": "ميتا بلاتفورمز",
+  "ticker": "META",
+  "bank": "Wells Fargo",
+  "rec": "Overweight",
+  "prev": "$640",
+  "new": "$796",
+  "date": "2026-09-21",
+  "source": "Yahoo Finance"
+ },
+ {
+  "name": "NFLX",
+  "ticker": "NFLX",
+  "bank": "Wells Fargo",
+  "rec": "Underweight",
+  "prev": "$80",
+  "new": "$57",
+  "date": "2026-09-18",
+  "source": "Yahoo Finance"
+ },
+ {
+  "name": "ميتا بلاتفورمز",
+  "ticker": "META",
+  "bank": "Citigroup",
+  "rec": "Buy",
+  "prev": "$800",
+  "new": "$800",
+  "date": "2026-09-16",
+  "source": "Yahoo Finance"
+ },
+ {
+  "name": "TSLA",
+  "ticker": "TSLA",
+  "bank": "Goldman Sachs",
+  "rec": "Neutral",
+  "prev": "$360",
+  "new": "$360",
+  "date": "2026-09-16",
+  "source": "Yahoo Finance"
+ },
+ {
+  "name": "ميتا بلاتفورمز",
+  "ticker": "META",
+  "bank": "JPMorgan",
+  "rec": "Overweight",
+  "prev": "$640",
+  "new": "$820",
+  "date": "2026-09-10",
+  "source": "Yahoo Finance"
+ },
+ {
+  "name": "AVGO",
+  "ticker": "AVGO",
+  "bank": "Citigroup",
+  "rec": "Buy",
+  "prev": "$500",
+  "new": "$515",
+  "date": "2026-09-04",
+  "source": "Yahoo Finance"
+ },
+ {
+  "name": "آمازون",
+  "ticker": "AMZN",
+  "bank": "Wells Fargo",
+  "rec": "Overweight",
+  "prev": "$328",
+  "new": "$338",
+  "date": "2026-09-03",
+  "source": "Yahoo Finance"
+ },
+ {
+  "name": "AVGO",
+  "ticker": "AVGO",
+  "bank": "Morgan Stanley",
+  "rec": "Overweight",
+  "prev": "$502",
+  "new": "$505",
+  "date": "2026-09-03",
+  "source": "Yahoo Finance"
+ },
+ {
+  "name": "AAPL",
+  "ticker": "AAPL",
+  "bank": "Morgan Stanley",
+  "rec": "Overweight",
+  "prev": "$360",
+  "new": "$360",
+  "date": "2026-09-02",
+  "source": "Yahoo Finance"
+ },
+ {
+  "name": "NVDA",
+  "ticker": "NVDA",
+  "bank": "Citigroup",
+  "rec": "Buy",
+  "prev": "$300",
+  "new": "$315",
+  "date": "2026-08-27",
+  "source": "Yahoo Finance"
+ },
+ {
+  "name": "NVDA",
+  "ticker": "NVDA",
+  "bank": "JPMorgan",
+  "rec": "Overweight",
+  "prev": "$280",
+  "new": "$320",
+  "date": "2026-08-27",
+  "source": "Yahoo Finance"
+ },
+ {
+  "name": "NVDA",
+  "ticker": "NVDA",
+  "bank": "Morgan Stanley",
+  "rec": "Overweight",
+  "prev": "$288",
+  "new": "$300",
+  "date": "2026-08-27",
+  "source": "Yahoo Finance"
+ },
+ {
+  "name": "كورويف",
+  "ticker": "CRWV",
+  "bank": "Goldman Sachs",
+  "rec": "Neutral",
+  "prev": "$121",
+  "new": "$139",
+  "date": "2026-08-21",
+  "source": "Yahoo Finance"
+ },
+ {
+  "name": "كورويف",
+  "ticker": "CRWV",
+  "bank": "Citigroup",
+  "rec": "Buy",
+  "prev": "$142",
+  "new": "$159",
+  "date": "2026-08-14",
+  "source": "Yahoo Finance"
+ },
+ {
+  "name": "كورويف",
+  "ticker": "CRWV",
+  "bank": "JPMorgan",
+  "rec": "Neutral",
+  "prev": "$110",
+  "new": "$120",
+  "date": "2026-08-12",
+  "source": "Yahoo Finance"
+ },
+ {
+  "name": "كورويف",
+  "ticker": "CRWV",
+  "bank": "Wells Fargo",
+  "rec": "Overweight",
+  "prev": "$155",
+  "new": "$160",
+  "date": "2026-08-12",
+  "source": "Yahoo Finance"
+ },
+ {
+  "name": "MSFT",
+  "ticker": "MSFT",
+  "bank": "Wells Fargo",
+  "rec": "Overweight",
+  "prev": "$650",
+  "new": "$700",
+  "date": "2026-08-12",
+  "source": "Yahoo Finance"
+ },
+ {
+  "name": "سيرفس ناو",
+  "ticker": "NOW",
+  "bank": "Wells Fargo",
+  "rec": "Overweight",
+  "prev": "$160",
+  "new": "$175",
+  "date": "2026-08-12",
+  "source": "Yahoo Finance"
+ },
+ {
+  "name": "كورويف",
+  "ticker": "CRWV",
+  "bank": "JPMorgan",
+  "rec": "Neutral",
+  "prev": "$105",
+  "new": "$110",
+  "date": "2026-08-11",
+  "source": "Yahoo Finance"
+ },
+ {
+  "name": "NVDA",
+  "ticker": "NVDA",
+  "bank": "Wells Fargo",
+  "rec": "Overweight",
+  "prev": "$315",
+  "new": "$315",
+  "date": "2026-08-11",
+  "source": "Yahoo Finance"
+ },
+ {
+  "name": "مايكرون",
+  "ticker": "MU",
+  "bank": "Citigroup",
+  "rec": "Buy",
+  "prev": "$1,400",
+  "new": "$1,150",
+  "date": "2026-08-07",
+  "source": "Yahoo Finance"
+ },
+ {
+  "name": "ويسترن ديجيتال",
+  "ticker": "WDC",
+  "bank": "Citigroup",
+  "rec": "Buy",
+  "prev": "$800",
+  "new": "$740",
+  "date": "2026-08-07",
+  "source": "Yahoo Finance"
  }
 ]
