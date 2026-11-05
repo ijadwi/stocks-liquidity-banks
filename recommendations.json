@@ -1,0 +1,172 @@
+[
+ {
+  "name": "ميتا بلاتفورمز",
+  "ticker": "META",
+  "bank": "Goldman Sachs",
+  "rec": "Buy",
+  "prev": "$860",
+  "new": "$885",
+  "date": "2026-10-22",
+  "source": "Investing.com"
+ },
+ {
+  "name": "إم إس سي آي",
+  "ticker": "MSCI",
+  "bank": "Morgan Stanley",
+  "rec": "Overweight",
+  "prev": "$662",
+  "new": "$671",
+  "date": "2026-10-22",
+  "source": "Investing.com"
+ },
+ {
+  "name": "إم إس سي آي",
+  "ticker": "MSCI",
+  "bank": "Goldman Sachs",
+  "rec": "Buy",
+  "prev": "$672",
+  "new": "$684",
+  "date": "2026-10-21",
+  "source": "Investing.com"
+ },
+ {
+  "name": "إم إس سي آي",
+  "ticker": "MSCI",
+  "bank": "JPMorgan",
+  "rec": "Overweight",
+  "prev": "$685",
+  "new": "$710",
+  "date": "2026-10-21",
+  "source": "MarketBeat"
+ },
+ {
+  "name": "تريد ويب",
+  "ticker": "TW",
+  "bank": "JPMorgan",
+  "rec": "Overweight",
+  "prev": "$117",
+  "new": "$136",
+  "date": "2026-10-21",
+  "source": "GuruFocus"
+ },
+ {
+  "name": "سبيس إكس",
+  "ticker": "SPACEX",
+  "bank": "JPMorgan",
+  "rec": "Overweight",
+  "prev": "$240",
+  "new": "$500",
+  "date": "2026-10-21",
+  "source": "TIKR"
+ },
+ {
+  "name": "كورنينغ",
+  "ticker": "GLW",
+  "bank": "JPMorgan",
+  "rec": "Neutral",
+  "prev": "$170",
+  "new": "$165",
+  "date": "2026-10-21",
+  "source": "Investing.com"
+ },
+ {
+  "name": "ويسترن ديجيتال",
+  "ticker": "WDC",
+  "bank": "Bank of America",
+  "rec": "Buy",
+  "prev": "$720",
+  "new": "$800",
+  "date": "2026-10-21",
+  "source": "Yahoo/TheStreet"
+ },
+ {
+  "name": "سبيس إكس",
+  "ticker": "SPACEX",
+  "bank": "Citigroup",
+  "rec": "Buy",
+  "prev": "$200",
+  "new": "$240",
+  "date": "2026-10-21",
+  "source": "TokenPost"
+ },
+ {
+  "name": "إيلي ليلي",
+  "ticker": "LLY",
+  "bank": "Goldman Sachs",
+  "rec": "Buy",
+  "prev": "$1,371",
+  "new": "$1,413",
+  "date": "2026-10-20",
+  "source": "TIKR/Yahoo"
+ },
+ {
+  "name": "آمازون",
+  "ticker": "AMZN",
+  "bank": "Morgan Stanley",
+  "rec": "Overweight Top Pick",
+  "prev": "$335",
+  "new": "$350",
+  "date": "2026-10-19",
+  "source": "CNBC/Yahoo"
+ },
+ {
+  "name": "كورويف",
+  "ticker": "CRWV",
+  "bank": "Goldman Sachs",
+  "rec": "Buy",
+  "prev": "$106",
+  "new": "$139",
+  "date": "2026-10-19",
+  "source": "Motley Fool"
+ },
+ {
+  "name": "إيلي ليلي",
+  "ticker": "LLY",
+  "bank": "Bank of America",
+  "rec": "Buy",
+  "prev": "$1,341",
+  "new": "$1,397",
+  "date": "2026-10-19",
+  "source": "TipRanks"
+ },
+ {
+  "name": "ميتا بلاتفورمز",
+  "ticker": "META",
+  "bank": "Citigroup",
+  "rec": "Buy",
+  "prev": "$800",
+  "new": "$895",
+  "date": "2026-10-15",
+  "source": "Yahoo/GuruFocus"
+ },
+ {
+  "name": "سيرفس ناو",
+  "ticker": "NOW",
+  "bank": "Citigroup",
+  "rec": "Buy",
+  "prev": "-",
+  "new": "$170",
+  "date": "2026-10-14",
+  "source": "Investing.com"
+ },
+ {
+  "name": "مايكرون",
+  "ticker": "MU",
+  "bank": "Goldman Sachs",
+  "rec": "Neutral",
+  "prev": "$1,100",
+  "new": "$1,250",
+  "date": "2026-10-01",
+  "source": "Yahoo/GuruFocus"
+ },
+ {
+  "name": "مايكرون",
+  "ticker": "MU",
+  "bank": "Bank of America",
+  "rec": "Buy",
+  "prev": "-",
+  "new": "$1,550",
+  "date": "2026-10-01",
+  "source": "BofA Research"
+ }
+]
