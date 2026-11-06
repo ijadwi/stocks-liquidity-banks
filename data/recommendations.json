@@ -1188,25 +1188,5 @@
   "new": "$315",
   "date": "2026-08-11",
   "source": "Yahoo Finance"
- },
- {
-  "name": "مايكرون",
-  "ticker": "MU",
-  "bank": "Citigroup",
-  "rec": "Buy",
-  "prev": "$1,400",
-  "new": "$1,150",
-  "date": "2026-08-07",
-  "source": "Yahoo Finance"
- },
- {
-  "name": "ويسترن ديجيتال",
-  "ticker": "WDC",
-  "bank": "Citigroup",
-  "rec": "Buy",
-  "prev": "$800",
-  "new": "$740",
-  "date": "2026-08-07",
-  "source": "Yahoo Finance"
  }
 ]
