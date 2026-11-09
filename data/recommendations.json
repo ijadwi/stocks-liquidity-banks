@@ -1,5 +1,25 @@
 [
  {
+  "name": "كورويف",
+  "ticker": "CRWV",
+  "bank": "Wells Fargo",
+  "rec": "Overweight",
+  "prev": "$160",
+  "new": "$115",
+  "date": "2026-11-09",
+  "source": "Yahoo Finance"
+ },
+ {
+  "name": "NVDA",
+  "ticker": "NVDA",
+  "bank": "Goldman Sachs",
+  "rec": "Buy",
+  "prev": "$300",
+  "new": "$300",
+  "date": "2026-11-09",
+  "source": "Yahoo Finance"
+ },
+ {
   "name": "UBER",
   "ticker": "UBER",
   "bank": "Wells Fargo",
