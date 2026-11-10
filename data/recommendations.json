@@ -1,5 +1,25 @@
 [
  {
+  "name": "NVDA",
+  "ticker": "NVDA",
+  "bank": "Citigroup",
+  "rec": "Buy",
+  "prev": "$315",
+  "new": "$285",
+  "date": "2026-11-10",
+  "source": "Yahoo Finance"
+ },
+ {
+  "name": "NVDA",
+  "ticker": "NVDA",
+  "bank": "Wells Fargo",
+  "rec": "Overweight",
+  "prev": "$315",
+  "new": "$300",
+  "date": "2026-11-10",
+  "source": "Yahoo Finance"
+ },
+ {
   "name": "كورويف",
   "ticker": "CRWV",
   "bank": "Wells Fargo",
@@ -1187,26 +1207,6 @@
   "prev": "$160",
   "new": "$175",
   "date": "2026-08-12",
-  "source": "Yahoo Finance"
- },
- {
-  "name": "كورويف",
-  "ticker": "CRWV",
-  "bank": "JPMorgan",
-  "rec": "Neutral",
-  "prev": "$105",
-  "new": "$110",
-  "date": "2026-08-11",
-  "source": "Yahoo Finance"
- },
- {
-  "name": "NVDA",
-  "ticker": "NVDA",
-  "bank": "Wells Fargo",
-  "rec": "Overweight",
-  "prev": "$315",
-  "new": "$315",
-  "date": "2026-08-11",
   "source": "Yahoo Finance"
  }
 ]
