@@ -1,5 +1,25 @@
 [
  {
+  "name": "كورويف",
+  "ticker": "CRWV",
+  "bank": "Citigroup",
+  "rec": "Buy",
+  "prev": "$128",
+  "new": "$149",
+  "date": "2026-11-11",
+  "source": "Yahoo Finance"
+ },
+ {
+  "name": "NVDA",
+  "ticker": "NVDA",
+  "bank": "Morgan Stanley",
+  "rec": "Overweight",
+  "prev": "$300",
+  "new": "$300",
+  "date": "2026-11-11",
+  "source": "Yahoo Finance"
+ },
+ {
   "name": "NVDA",
   "ticker": "NVDA",
   "bank": "Citigroup",
@@ -1167,46 +1187,6 @@
   "prev": "$142",
   "new": "$159",
   "date": "2026-08-14",
-  "source": "Yahoo Finance"
- },
- {
-  "name": "كورويف",
-  "ticker": "CRWV",
-  "bank": "JPMorgan",
-  "rec": "Neutral",
-  "prev": "$110",
-  "new": "$120",
-  "date": "2026-08-12",
-  "source": "Yahoo Finance"
- },
- {
-  "name": "كورويف",
-  "ticker": "CRWV",
-  "bank": "Wells Fargo",
-  "rec": "Overweight",
-  "prev": "$155",
-  "new": "$160",
-  "date": "2026-08-12",
-  "source": "Yahoo Finance"
- },
- {
-  "name": "MSFT",
-  "ticker": "MSFT",
-  "bank": "Wells Fargo",
-  "rec": "Overweight",
-  "prev": "$650",
-  "new": "$700",
-  "date": "2026-08-12",
-  "source": "Yahoo Finance"
- },
- {
-  "name": "سيرفس ناو",
-  "ticker": "NOW",
-  "bank": "Wells Fargo",
-  "rec": "Overweight",
-  "prev": "$160",
-  "new": "$175",
-  "date": "2026-08-12",
   "source": "Yahoo Finance"
  }
 ]
