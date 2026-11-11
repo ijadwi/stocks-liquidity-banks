@@ -157,7 +157,8 @@ td{padding:7px 6px;white-space:nowrap}tbody tr:nth-child(odd){background:var(--r
 <section class="cd noprint cfgb" id="cfg"><h2>🔌 ربط البيانات</h2><div class="cfgg">
  <div><label>المصدر</label><select id="src"><option value="yahoo">Yahoo Finance — أسعار حية بدون مفتاح</option><option value="finnhub" selected>Finnhub — تحديث مستمر (مفتاحك)</option><option value="demo">بيانات تجريبية</option><option value="av">Alpha Vantage (أسهم أمريكية)</option><option value="url">رابط JSON / API مخصص</option><option value="csv">لصق CSV</option></select></div>
  <div id="gKey"><label>مفتاح API (Finnhub / Alpha Vantage)</label><input id="key" type="password"></div><div id="gUrl" hidden><label>رابط JSON</label><input id="url" dir="ltr"></div>
- <div><label>التحديث (ثانية)</label><input id="iv" type="number" min="5" value="20"></div><div><button id="go" style="width:100%;background:var(--ac);color:#201a00;font-weight:700;border:0">ابدأ الاتصال</button></div></div>
+ <div><label>رابط الوسيط (Worker)</label><input id="px" dir="ltr" placeholder="https://stock-proxy.xxx.workers.dev"></div>
+  <div><label>التحديث (ثانية)</label><input id="iv" type="number" min="5" value="20"></div><div><button id="go" style="width:100%;background:var(--ac);color:#201a00;font-weight:700;border:0">ابدأ الاتصال</button></div></div>
  <div id="gCsv" hidden><textarea id="csv" rows="4" style="width:100%;margin-top:10px;direction:ltr;background:#14141f;color:var(--tx);border:1px solid var(--bd);border-radius:8px" placeholder="symbol,price,change_pct,volume"></textarea></div><div id="msg"></div>
  <p class="hint">Finnhub (المختار حالياً): أسعار حية مستمرة بمفتاحك؛ الحجم والتاريخ يُكمَلان من Yahoo لأن Finnhub المجاني لا يوفرهما. الحد المجاني 60 طلباً/دقيقة، ويُضبط التحديث تلقائياً ليناسبه. Yahoo Finance: أسعار حية لقائمة المتابعة (تشمل كل أسهم توصيات البنوك) والبحث بأي رمز، بدون مفتاح. Alpha Vantage: الأسهم الأعلى نشاطاً + تحليل معمّق (3 طلبات لكل سهم). JSON مخصص: مصفوفة فيها symbol وprice وvolume وchange_pct (يتطلب CORS). المفتاح يُحفظ في متصفحك فقط.</p></section>
 </main>
@@ -180,7 +181,11 @@ function quick(x){let sc=0,R=["⏳ إشارة أولية من حركة اليو�
   if(MED&&x.vol>MED*2){const d=x.chg>=0?1:-1;sc+=d;R.push(`حجم التداول ${(x.vol/MED).toFixed(1)}× الوسيط ${d>0?"ويدعم الصعود":"ويدعم الهبوط"}`)}
   if(x.sent!=null){if(x.sent>=.15){sc++;R.push("مشاعر الأخبار إيجابية")}else if(x.sent<=-.15){sc--;R.push("مشاعر الأخبار سلبية")}}
   return mk(sc*15,R,false)}
-const FH_KEY="dbg3bmhr01qukur1sgp0dbg3bmhr01qukur1sgpg";
+const FH_KEY="";
+const PROXY=(()=>{try{const q=new URLSearchParams(location.search).get("api");if(q)localStorage.setItem("proxy",q);return(q||localStorage.getItem("proxy")||"").trim().replace(/\/+$/,"")}catch(e){return""}})();
+const HAS_PX=/^https?:\/\//.test(PROXY);
+async function fhQuote(sym,key){const r=HAS_PX?await fetch(PROXY+"/quote?symbol="+encodeURIComponent(sym)):await fetch("https://finnhub.io/api/v1/quote?symbol="+encodeURIComponent(sym)+"&token="+key);
+  if(r.status===429)throw new Error("429");if(r.status===501)throw new Error("لم يُضبط FINNHUB_KEY في الوسيط — أضفه أو اختر مصدر Yahoo");if(!r.ok)throw new Error("Finnhub "+r.status);return r.json()}
 const FAV=(()=>{try{const o=JSON.parse(localStorage.getItem("fav_v1"));return{open:o&&o.open||{},closed:o&&o.closed||[]}}catch(e){return{open:{},closed:[]}}})();
 const sma=(a,n)=>a.length>=n?a.slice(-n).reduce((x,y)=>x+y)/n:null;
 function ema(a,n){const k=2/(n+1);let e=a[0];const o=[e];for(let i=1;i<a.length;i++){e=a[i]*k+e*(1-k);o.push(e)}return o}
@@ -227,8 +232,7 @@ async function loadDeep(s){if(DS[s]){analyze(s);return}
       DS[s]={c,d:c.map((_,i)=>new Date(Date.now()-(259-i)*864e5).toISOString().slice(5,10)),v:c.map(()=>1e6+Math.random()*5e6),hi:c.map(q=>q*1.01),lo:c.map(q=>q*.99),ov:{cap:data[s].price*(2e9+Math.random()*3e10),pe:20+Math.random()*60,dy:Math.random()*.02,sb:Math.random()*14|0,b:Math.random()*14|0,h:Math.random()*8|0,s:Math.random()*3|0,ss:Math.random()*2|0,target:data[s].price*(.85+Math.random()*.4)}}}
     else if(src==="yahoo"){const r=await yChart(s,"1y");DS[s]=r.series;DS[s].ov={}}
     else if(src==="finnhub"){let r2=null;
-      try{const now=Math.floor(Date.now()/1e3),j=await(await fetch(`https://finnhub.io/api/v1/stock/candle?symbol=${s}&resolution=D&from=${now-31536e3}&to=${now}&token=${k||FH_KEY}`)).json();
-        if(j.s==="ok"&&j.c&&j.c.length)r2={c:j.c,d:j.t.map(t=>new Date(t*1e3).toISOString().slice(5,10)),v:j.v||j.c.map(()=>0),hi:j.h||j.c,lo:j.l||j.c,ov:{}}}catch(e){}
+      
       if(!r2){const y=await yChart(s,"1y");r2=y.series;r2.ov={}}
       DS[s]=r2}
     else if(k){const av=async q=>{const j=await(await fetch("https://www.alphavantage.co/query?"+q+"&apikey="+encodeURIComponent(k))).json();if(j.Note||j.Information||j["Error Message"])throw new Error(j.Note||j.Information||j["Error Message"]);return j};
@@ -282,7 +286,7 @@ function parseCSV(t){const L=t.trim().split(/\n/).map(l=>l.split(/,|\t|;/).map(c
   return L.map(r=>Object.fromEntries(h.map((k,i)=>[k,r[i]])))}
 $("src").onchange=()=>{const s=$("src").value;$("gKey").hidden=!(s==="av"||s==="finnhub");$("gUrl").hidden=s!=="url";$("gCsv").hidden=s!=="csv"};
 $("go").onclick=()=>{clearInterval(timer);data={};cur=null;for(const o of [DS,DEEP,DERR,NEWS])for(const k in o)delete o[k];try{localStorage.setItem("avk",$("key").value)}catch(e){}
-  if(!$("key").value&&($("src").value==="av"||$("src").value==="finnhub"))return $("msg").textContent="أدخل مفتاح API";
+  if(!$("key").value&&($("src").value==="av"||($("src").value==="finnhub"&&!HAS_PX)))return $("msg").textContent="أدخل مفتاح API";
   tick();if($("src").value!=="csv")timer=setInterval(tick,Math.max($("src").value==="finnhub"?Math.ceil(wlist().length*1.2):5,$("iv").value)*1000)};
 try{$("key").value=localStorage.getItem("avk")||FH_KEY}catch(e){$("key").value=FH_KEY}
 
@@ -359,8 +363,9 @@ const getW=()=>{try{return JSON.parse(localStorage.getItem("wl_v1"))||[]}catch(e
 const addW=s=>{try{const w=getW();if(!w.includes(s)){w.push(s);localStorage.setItem("wl_v1",JSON.stringify(w))}}catch(e){}};
 const wlist=()=>[...new Set([...WL0,...BANKS.map(b=>b.ticker),...getW(),...Object.keys(FAV.open)])];
 async function yChart(s,range){
-  const r=await fetch("https://query1.finance.yahoo.com/v8/finance/chart/"+encodeURIComponent(s)+"?range="+range+"&interval=1d&includePrePost=false");
-  if(!r.ok)throw new Error("Yahoo "+r.status+" ("+s+")");
+  let r;try{r=await fetch(HAS_PX?PROXY+"/chart?symbol="+encodeURIComponent(s)+"&range="+range:"https://query1.finance.yahoo.com/v8/finance/chart/"+encodeURIComponent(s)+"?range="+range+"&interval=1d&includePrePost=false")}
+  catch(e){throw new Error(HAS_PX?"تعذّر الاتصال بالوسيط — تحقق من رابط الوسيط":"المتصفح يمنع الاتصال المباشر بـ Yahoo — أضف رابط الوسيط (Worker) في إعدادات الربط")}
+  if(!r.ok)throw new Error((HAS_PX?"الوسيط ":"Yahoo ")+r.status+" ("+s+")");
   const j=await r.json(),res=j.chart&&j.chart.result&&j.chart.result[0];
   if(!res)throw new Error((j.chart&&j.chart.error&&j.chart.error.description)||"رمز غير موجود: "+s);
   const m=res.meta||{},q=res.indicators.quote[0],ts=res.timestamp||[],ix=[];
@@ -375,8 +380,7 @@ async function pullYahoo(){const L=wlist(),R=await Promise.allSettled(L.map(s=>y
   const bad=L.filter((s,i)=>R[i].status==="rejected");window.bad=bad.length?"ℹ️ لم تتوفر أسعار: "+bad.join("، "):"";return ok}
 const VOLC={};
 async function pullFinnhub(){const key=$("key").value||FH_KEY,L=wlist();
-  const R=await Promise.allSettled(L.map(async z=>{const r=await fetch("https://finnhub.io/api/v1/quote?symbol="+encodeURIComponent(z)+"&token="+key);
-    if(r.status===429)throw new Error("429");if(!r.ok)throw new Error("Finnhub "+r.status);const j=await r.json();if(j.c==null||j.c===0)throw new Error("no data");return{z,p:j.c,chg:j.dp||0}}));
+  const R=await Promise.allSettled(L.map(async z=>{const j=await fhQuote(z,key);if(j.c==null||j.c===0)throw new Error("no data");return{z,p:j.c,chg:j.dp||0}}));
   const ok=R.filter(r=>r.status==="fulfilled").map(r=>r.value);
   if(!ok.length)throw new Error("تعذر جلب أسعار Finnhub — تحقق من المفتاح أو من حد الطلبات (60/دقيقة في الخطة المجانية)");
   const now=Date.now(),need=ok.filter(x=>!VOLC[x.z]||now-VOLC[x.z].t>18e4).map(x=>x.z),first=!Object.keys(VOLC).length;
@@ -391,7 +395,7 @@ async function openSymbol(raw){const s=resolveSym(raw||"");if(!s){if(raw)$("msg"
   const src=$("src").value;$("msg").textContent="⏳ جارٍ جلب "+s+"…";
   try{let r;
     if(src==="yahoo"){r=await yChart(s,"1y");DS[s]=r.series;DS[s].ov={};delete r.series;addW(s)}
-    else if(src==="finnhub"){const j=await(await fetch(`https://finnhub.io/api/v1/quote?symbol=${s}&token=${$("key").value||FH_KEY}`)).json();
+    else if(src==="finnhub"){const j=await fhQuote(s,$("key").value||FH_KEY);
       if(j.c==null||j.c===0)throw new Error("رمز غير موجود أو لا توجد بيانات: "+s);
       r={sym:s,price:j.c,chg:j.dp||0,vol:0,liq:0};try{const y=await yChart(s,"1y");r.vol=y.vol;r.liq=j.c*y.vol;DS[s]=y.series;DS[s].ov={}}catch(e){}addW(s)}
     else if(src==="av"&&$("key").value){const g=(await avq("function=GLOBAL_QUOTE&symbol="+s))["Global Quote"];if(!g||!g["05. price"])throw new Error("رمز غير موجود: "+s);const p=+g["05. price"],v=+g["06. volume"];r={sym:s,price:p,chg:parseFloat(g["10. change percent"])||0,vol:v,liq:p*v};addW(s)}
@@ -570,6 +574,7 @@ function renderFav(force){const box=$("favB");if(!box)return;
   box.querySelectorAll("table").forEach((tb,ti)=>tb.querySelectorAll("tbody>tr").forEach(r=>{if(r.classList.contains("fd"))return;[...r.children].forEach((td,i)=>td.dataset.l=hs[ti][i]||"")}))}
 renderFav(true);
 $("sgD").textContent=new Date().toLocaleDateString("en-GB",{day:"2-digit",month:"long",year:"numeric"});
+try{$("px").value=PROXY;$("px").onchange=()=>{try{localStorage.setItem("proxy",$("px").value.trim())}catch(e){}location.href=location.pathname}}catch(e){}
 $("go").click();
 
 var REG;
@@ -611,7 +616,7 @@ function planUI(d){const c=d.c,h=d.hi||c,l=d.lo||c,v=d.v,n=c.length-1,p=(data[cu
   for(;j<=Math.min(i+10,n);j++){if(l[j]<=st){r=-1;break}if(h[j]>=tg){r=1.5;break}}if(r===null){j=Math.min(i+10,n);r=(c[j]-e)/(2*A[i])}last=j;R.push(r)}
  const w=R.filter(x=>x>0).length,k=sc>=80?["فرصة قوية","buy"]:sc>=60?["متابعة","hold"]:["مراقبة","sell"],m=["✕","◐","✓"];
  LASTP={sc,rr,stop,k};return`<div style="font-size:20px;font-weight:800"><span class="bd ${k[1]}">${k[0]}</span> ${sc}/100 <span class="hint">· حالة السوق: ${g||"…"}</span></div>
- ${NM.map((t,i)=>`<div>${m[cr[i]*2]} ${t}</div>`).join("")}
+ ${NM.map((t,i)=>`<div>${m[Math.round(cr[i]*2)]} ${t}</div>`).join("")}
  <div class="st" style="margin-top:8px"><div><span>الدخول</span><b>$${p.toFixed(2)}</b></div><div><span>مستوى الإبطال</span><b class="dn">$${stop.toFixed(2)} (${((p-stop)/p*100).toFixed(1)}%)</b></div><div><span>أهداف 1 / 2 / 3</span><b class="up">${T.map(x=>x.toFixed(2)).join(" / ")}</b></div><div><span>ATR (14)</span><b>${atr.toFixed(2)}</b></div></div>
  <div class="hint">اختبار القاعدة تاريخياً على هذا السهم: ${R.length?`${R.length} صفقة · نجاح ${(w/R.length*100).toFixed(0)}% · متوسط ${(R.reduce((x,y)=>x+y,0)/R.length).toFixed(2)}R`:"لا صفقات كافية"} · مراقبة وتحليل فقط، لا تنفيذ تلقائي.</div>`}
 function extra(){const d=DS[cur],sx=$("sx"),tp=$("tp");if(!sx)return;
