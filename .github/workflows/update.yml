@@ -1,28 +1,25 @@
-name: update-market-data
+name: update-data
 on:
   schedule:
-    - cron: "*/5 13-21 * * 1-5"    # كل 5 دقائق أثناء السوق الأمريكي (UTC). GitHub قد يؤخر التنفيذ
+    - cron: "*/15 13-21 * * 1-5"   # كل 15 دقيقة أثناء ساعات السوق الأمريكي (UTC)
     - cron: "30 22 * * 1-5"        # بعد الإغلاق
-  workflow_dispatch:
+  workflow_dispatch: {}            # زر «Run workflow» للتشغيل اليدوي
 permissions:
   contents: write
-concurrency: { group: market-data, cancel-in-progress: false }
+concurrency:
+  group: update-data
+  cancel-in-progress: false
 jobs:
-  update:
+  fetch:
     runs-on: ubuntu-latest
-    env:
-      ALPACA_KEY_ID: ${{ secrets.ALPACA_KEY_ID }}
-      ALPACA_SECRET: ${{ secrets.ALPACA_SECRET }}
-      POLYGON_KEY: ${{ secrets.POLYGON_KEY }}
-      TWELVEDATA_KEY: ${{ secrets.TWELVEDATA_KEY }}
-      FINNHUB_KEY: ${{ secrets.FINNHUB_KEY }}
-      PROVIDERS: ${{ vars.PROVIDERS }}   # اختياري: مثل alpaca,polygon,stooq,yahoo
     steps:
       - uses: actions/checkout@v4
-      - uses: actions/setup-python@v5
-        with: { python-version: "3.12" }
-      - run: python scripts/fetch_data.py
-      - run: |
-          git config user.name "market-bot"; git config user.email "bot@users.noreply.github.com"
-          git add data/market.json
-          git diff --cached --quiet || (git commit -m "data: update market.json" && git pull --rebase -q && git push)
+      - uses: actions/setup-node@v4
+        with: { node-version: 20 }
+      - run: node scripts/fetch.mjs
+      - name: Commit data
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data
+          git diff --cached --quiet || (git commit -m "update data" && git push)
