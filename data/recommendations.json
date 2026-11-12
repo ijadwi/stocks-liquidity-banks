@@ -1,5 +1,25 @@
 [
  {
+  "name": "NVDA",
+  "ticker": "NVDA",
+  "bank": "Goldman Sachs",
+  "rec": "Buy",
+  "prev": "$300",
+  "new": "$220",
+  "date": "2026-11-12",
+  "source": "Yahoo Finance"
+ },
+ {
+  "name": "NVDA",
+  "ticker": "NVDA",
+  "bank": "Citigroup",
+  "rec": "Buy",
+  "prev": "$285",
+  "new": "$225",
+  "date": "2026-11-12",
+  "source": "Yahoo Finance"
+ },
+ {
   "name": "كورويف",
   "ticker": "CRWV",
   "bank": "Citigroup",
