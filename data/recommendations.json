@@ -1188,15 +1188,5 @@
   "new": "$300",
   "date": "2026-08-27",
   "source": "Yahoo Finance"
- },
- {
-  "name": "كورويف",
-  "ticker": "CRWV",
-  "bank": "Goldman Sachs",
-  "rec": "Neutral",
-  "prev": "$121",
-  "new": "$139",
-  "date": "2026-08-21",
-  "source": "Yahoo Finance"
  }
 ]
