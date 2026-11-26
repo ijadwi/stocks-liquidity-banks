@@ -1158,35 +1158,5 @@
   "new": "$360",
   "date": "2026-09-02",
   "source": "Yahoo Finance"
- },
- {
-  "name": "NVDA",
-  "ticker": "NVDA",
-  "bank": "Citigroup",
-  "rec": "Buy",
-  "prev": "$300",
-  "new": "$315",
-  "date": "2026-08-27",
-  "source": "Yahoo Finance"
- },
- {
-  "name": "NVDA",
-  "ticker": "NVDA",
-  "bank": "JPMorgan",
-  "rec": "Overweight",
-  "prev": "$280",
-  "new": "$320",
-  "date": "2026-08-27",
-  "source": "Yahoo Finance"
- },
- {
-  "name": "NVDA",
-  "ticker": "NVDA",
-  "bank": "Morgan Stanley",
-  "rec": "Overweight",
-  "prev": "$288",
-  "new": "$300",
-  "date": "2026-08-27",
-  "source": "Yahoo Finance"
  }
 ]
